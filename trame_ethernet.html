@@ -1,0 +1,158 @@
+<!DOCTYPE HTML> 
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Site Protocoles Réseaux</title>
+		
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" type="text/css" href="./static/styles/style.css">
+		<link rel="stylesheet" type="text/css" href="./static/styles/trame_ethernet.css">
+
+        <script src="./static/js/navbar.js" defer></script>
+	</head>
+    <body>
+        <header>
+            <nav class="navbar is-fixed-top is-dark" aria-label="main navigation">
+
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./index.html">Accueil</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./modele_osi.html">Modèle OSI</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./modele_tcp.html">Modèle TCP/IP</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./comparaison_modeles.html">Comparaison Modèles</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./paquet_ipv4.html">Paquet IPv4</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./paquet_ipv6.html">Paquet IPv6</a>
+                        <a class="navbar-item has-text-weight-bold has-text-success" href="./trame_ethernet.html">Trame Ethernet</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./datagramme_udp.html">Datagramme UDP</a>
+                        <a class="navbar-item has-text-weight-bold has-text-white" href="./segment_tcp.html">Segment TCP</a>                    
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="section site-content mt-5">
+
+            <section class="section">
+
+                <div class="container ethernet-container">
+
+                    <table class="table is-bordered is-fullwidth ethernet-table">
+
+                        <caption>Trame Ethernet</caption>
+
+                        <colgroup>
+                            <col span="48">
+                        </colgroup>
+
+                            <tbody>
+
+                                <tr>
+                                    <th>0</th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>11</th>
+                                    <th>12</th>
+                                    <th>13</th>
+                                    <th>14</th>
+                                    <th>15</th>
+                                    <th>16</th>
+                                    <th>17</th>
+                                    <th>18</th>
+                                    <th>19</th>
+                                    <th>20</th>
+                                    <th>21</th>
+                                    <th>22</th>
+                                    <th>23</th>
+                                    <th>24</th>
+                                    <th>25</th>
+                                    <th>26</th>
+                                    <th>27</th>
+                                    <th>28</th>
+                                    <th>29</th>
+                                    <th>30</th>
+                                    <th>31</th>
+                                    <th>32</th>
+                                    <th>33</th>
+                                    <th>34</th>
+                                    <th>35</th>
+                                    <th>36</th>
+                                    <th>37</th>
+                                    <th>38</th>
+                                    <th>39</th>
+                                    <th>40</th>
+                                    <th>41</th>
+                                    <th>42</th>
+                                    <th>43</th>
+                                    <th>44</th>
+                                    <th>45</th>
+                                    <th>46</th>
+                                    <th>47</th>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="48">
+                                        Adresse MAC destination
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="48">
+                                        Adresse MAC source
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="32">
+                                        Tag 802.1Q — optionnel
+                                    </td>
+
+                                    <td colspan="16">
+                                        EtherType / Longueur
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="48">
+                                        Charge utile — 46 à 1 500 octets
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="32">
+                                        FCS
+                                    </td>
+
+                                    <td colspan="16">
+                                        Fin de trame
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+    </body>
+</html>  

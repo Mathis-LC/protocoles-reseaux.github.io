@@ -1,0 +1,42 @@
+.ethernet-container {
+  width: 100%;
+  margin: 30px auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.ethernet-table {
+  width: 1600px;
+  min-width: 1600px;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  margin: 0;
+}
+
+.ethernet-table th {
+  height: 40px;
+  padding: 0;
+
+  text-align: center !important;
+  vertical-align: middle !important;
+
+  border: rgb(190, 189, 189) 0.1em solid;
+
+  font-size: 0.8rem;
+  font-weight: normal;
+
+  line-height: normal;
+}
+
+.ethernet-table td {
+  height: 58px;
+  padding: 0.75rem;
+
+  text-align: center;
+  vertical-align: middle;
+
+  border: rgb(190, 189, 189) 0.1em solid;
+}
